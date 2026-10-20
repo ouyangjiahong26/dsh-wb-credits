@@ -1,0 +1,8 @@
+# dsh-wb-credits —— DSH bundle patch
+#
+# 把「中转站积分看板」插进 Web profile 的配置树。
+# bundle 被列入 profile 的 dsh.profile.bundles 后，DSH 启动时会应用这份 patch。
+
+- insert:
+    - id: dsh-wb-credits
+      name: dsh-wb-credits

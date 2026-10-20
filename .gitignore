@@ -1,0 +1,15 @@
+# 依赖与安装产物（本仓库只放源码）
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+
+# 本机运行数据：配置里含 DPAPI 加密的面板密码，绝不入库
+.dshw-credits*.json
+wb-credits/
+*.log
+
+# 截图/临时（只忽略仓库根目录下的临时截图，docs/ 里的文档图要入库）
+/shot-*.png
+_testhome/
+_reg*.json
+_*.cjs

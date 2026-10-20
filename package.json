@@ -1,0 +1,40 @@
+{
+  "name": "dsh-wb-credits",
+  "version": "0.1.0",
+  "description": "DSH Web 插件：右下角一枚小胶囊，显示中转站（WorkBuddy / New-API 风格网关）本 key 已用积分、今日消耗与全站积分余额；网关自动识别，零配置可用。",
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "./icon.png",
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "icon.png",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "balance",
+    "credits",
+    "relay",
+    "usage",
+    "api-gateway"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhanghongfeix/dsh-wb-credits.git"
+  },
+  "homepage": "https://github.com/zhanghongfeix/dsh-wb-credits#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
