@@ -2,7 +2,7 @@
 
 本仓库的 issue 和任务要求存放在上游仓库 `zhanghongfeix/dsh-wb-credits` 的 GitHub Issues 中。所有操作使用 `gh` CLI。
 
-本地 clone 的 remote 指向 fork `ouyangjiahong26/dsh-wb-credits`，该 fork 的 Issues 已关闭，`gh` 在 clone 内默认解析到 fork。所以在 clone 内执行 issue 命令要显式加 `-R zhanghongfeix/dsh-wb-credits`。下文命令为简明起见省略该参数，实际执行时补上。
+仓库从 `git remote -v` 推导，`gh` 在 clone 内自动解析。从自己的 fork clone 时，fork 的 Issues 通常已关闭，`gh` 会解析到 fork，此时 issue 相关命令要显式加 `-R zhanghongfeix/dsh-wb-credits`。「约定」一节的命令为简明起见省略该参数，其余各节按实际 clone 来源补上。
 
 ## 约定
 
@@ -21,7 +21,7 @@
 ### 提案先行
 
 - 动手写代码之前先发 issue 提案，末尾写明是否已有可用实现，得到维护者回应再动手。错别字、修法唯一的明显 bug 等小改动可以直接提 PR。
-- 发 issue 前先搜：文档、README、既有 issue 与 PR。已有答案或正在进行的，评论到既有帖子里，不发新帖。
+- 发 issue 前先搜：文档、README、既有 issue、PR。已有答案或正在进行的，评论到既有帖子里，不发新帖。
 
 ### issue
 
@@ -45,7 +45,7 @@
 
 ## Pull request 作为分诊渠道
 
-PR 作为请求渠道：否。 （如果本仓库将外部 PR 视为功能请求，改为 `是`。`/triage` 会读取此标记。）
+PR 作为请求渠道：否。（如果本仓库将外部 PR 视为功能请求，改为 `是`。`/triage` 会读取此标记。）
 
 设为 `是` 时，PR 与 issue 走相同的标签和状态，使用 `gh pr` 等价命令：
 
@@ -65,7 +65,7 @@ GitHub 的 issue 和 PR 共享编号空间，所以 `#42` 可能是其中任一�
 
 ## GitHub Project
 
-使用 Project：否。 （仓库用 GitHub Project 管理工作状态时改为 `是`，并填下表。`/github-project`、`/triage`、`/open-pr`、`/merge-pr` 读取此配置。）
+使用 Project：否。（仓库用 GitHub Project 管理工作状态时改为 `是`，并填下表。`/github-project`、`/triage`、`/open-pr`、`/merge-pr` 读取此配置。）
 
 | 项 | 值 |
 | --- | --- |
